@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>OU Walking Club - Add Announcement</title>
+        <link rel="stylesheet" href="q2a.css">
+        <meta charset="utf-8"/>
+        <meta name="author" content="Abi Feetham" />
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="images/oulogo-56.jpg" alt="The Open University logo">
+            <h1>OU Walking Club Admin App</h1>
+            <!--navigation bar-->
+            <nav>
+                <ul>
+                    <li><a href="q2a.html">View proposed events</a></li>
+                    <li><a href="q2a.html">Create events</a></li>
+                    <li><a href="q2a.html">Manage club members</a></li>
+                    <li><a href="q2a.html">Post news items</a></li>
+                    <li><a href="q2a.html">Create email announcements</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2>Send an email announcement</h2>
+        <div id="announcementform">
+            <!--form submits data to the TT284 reflector-->
+            <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+                <!--hidden form field for session ID-->
+                <input type="hidden" name="sessionID" value="1234abcd-5678-9090-efef">
+                <label for="title">Title:</label>
+                <label for="date" id="datelabel">Date to send announcement:</label><br>
+                <input type="text" id="title" name="title">
+                <input type="date" id="date" name="date"><br>
+                <label for="body">Body:</label><br>
+                <textarea id="body" name="body" rows="20" cols="60"></textarea><br>
+                <label for="file">Attach file:</label>
+                <input type="file" id="file" name="file">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </body>
+</html>
